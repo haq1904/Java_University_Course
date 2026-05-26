@@ -22,3 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Bỏ qua rác của Eclipse và Maven
+.metadata/
+target/
+.settings/
+.classpath
+.project
+*.jar
+*.war
