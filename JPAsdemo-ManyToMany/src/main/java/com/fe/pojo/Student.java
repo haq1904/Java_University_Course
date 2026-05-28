@@ -32,7 +32,7 @@ public class Student {
     @Column(name = "marks")
     private int marks;
 
-    @ManyToMany(cascade = CascadeType.MERGE)
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "STUDENTS_BOOKS",
             joinColumns = @JoinColumn(name = "student_id"),
             inverseJoinColumns = @JoinColumn(name = "book_id"))

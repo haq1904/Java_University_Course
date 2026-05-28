@@ -34,10 +34,10 @@ public class Book {
         super();
     }
 
-    public Book(String title, String author, String isnb) {
+    public Book(String title, String author, String isbn) {
         this.title = title;
         this.author = author;
-        this.isbn = isnb;
+        this.isbn = isbn;
     }
 
     public int getId() {
