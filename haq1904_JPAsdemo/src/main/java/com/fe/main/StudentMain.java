@@ -1,12 +1,14 @@
 package com.fe.main;
-import com.fe.pojo.Student;
-import com.fe.dao.StudentDAO;
 
 import java.util.List;
 import java.util.Scanner;
 
+import com.fe.dao.StudentDAO;
+import com.fe.pojo.Student;
+
 public class StudentMain {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         StudentDAO studentDAO = new StudentDAO("JPAs");
 
@@ -30,23 +32,23 @@ public class StudentMain {
                 case 1:
                     System.out.println("--- Danh sách Sinh viên ---");
                     List<Student> students = studentDAO.getStudents();
-                    for ( Student s : students){
-                        System.out.println(s.getId()+ s.getFirstName()+ s.getLastName() + s.getMarks());
+                    for (Student s : students) {
+                        System.out.println("Id: " + s.getId() + " First name: " + s.getFirstName() + " Last name: " + s.getLastName() + " Marks: " + s.getMarks());
                     }
                     break;
 
                 case 2:
                     System.out.println("--- Thêm Sinh viên mới ---");
-                    Student newStudent = new Student("Lam", "Nguyen", 9);
+                    Student newStudent = new Student("Sang", "Nguyen", 9);
                     studentDAO.save(newStudent);
                     System.out.println("Đã thêm thành công!");
                     break;
 
                 case 3:
                     System.out.println("--- Cập nhật Sinh viên ---");
-                    Student updateStudent = new Student("Sang", "Nguyen", 9);
+                    Student updateStudent = new Student("Sang", "Nguyen", 7);
                     // Lưu ý: Thường khi update ông phải set id cho updateStudent để JPA biết sửa dòng nào
-                    studentDAO.update(updateStudent);
+                    studentDAO.update(4, updateStudent);
                     System.out.println("Đã cập nhật thành công!");
                     break; // CỦA ÔNG ĐANG BỊ THIẾU LỆNH BREAK Ở ĐÂY NÈ!
 
@@ -58,7 +60,8 @@ public class StudentMain {
 
                 case 5:
                     System.out.println("--- Tìm Sinh viên theo ID ---");
-                    studentDAO.findById(1);
+                    Student foundStudent = studentDAO.findById(1);
+                    System.out.println("Id: " + foundStudent.getId() + " First name: " + foundStudent.getFirstName() + " Last name: " + foundStudent.getLastName() + " Marks: " + foundStudent.getMarks());
                     break;
 
                 case 0:
