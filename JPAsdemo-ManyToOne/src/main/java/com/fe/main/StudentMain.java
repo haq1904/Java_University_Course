@@ -10,8 +10,8 @@ public class StudentMain {
     public static void main(String[] args) {
         String fileName = "JPAs";
         IStudentService studentService = new StudentService(fileName);
-        Student student = new Student("Quy", "Anh", 9);
-        Book book = new Book("Java Persistence with Spring", "Catalin Tudose", "978");
+        Student student = new Student("Tram", "Que", 9);
+        Book book = new Book("Java Persistence quy anh ", "Catalin Tudose", "978");
         student.getBooks().add(book);
         studentService.save(student);
 

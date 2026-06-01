@@ -12,8 +12,8 @@ public class StudentMain {
     public static void main(String[] args) {
         String fileName = "JPAs";
         IStudentService studentService = new StudentService(fileName);
-        Student student = new Student("Thao", "Tran", 9);
-        Book book = new Book("Java Persistence ", "Catalin Tudose", "978");
+        Student student = new Student("Thuy", "Tran", 9);
+        Book book = new Book("Java Persistence cua thuy ", "Catalin Tudose", "978");
         student.getBooks().add(book);
         studentService.save(student);
         List<Student> students = studentService.findAll();
