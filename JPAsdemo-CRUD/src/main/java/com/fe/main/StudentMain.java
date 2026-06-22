@@ -41,13 +41,13 @@ public class StudentMain {
             	break;
             case 3 : 
             	student = new Student("Sang","Nguyen",9);
-            	studentDAO.update(2,student);
+            	studentDAO.update(1,student);
             	break;
             case 4 : 
-            	studentDAO.delete(2);
+            	studentDAO.delete(1);
             	break;
             case 5 : 
-            	Student s = studentDAO.findById(3);
+            	Student s = studentDAO.findById(2);
             	System.out.println(s.getId() +" " +s.getId() +" " +s.getFirstName() +" " +s.getLastName() +" " +s.getMarks() +" " );
             	break;
             }
