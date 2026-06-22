@@ -24,7 +24,7 @@
 		</init-param>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>hsf301.fe.com.HSF310_Chapter_08_Management_Student</param-value>
+			<param-value>hsf301.fe.com.config</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
