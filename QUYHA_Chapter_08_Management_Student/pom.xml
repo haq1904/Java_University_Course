@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hsf301.fe.com</groupId>
-    <artifactId>HSF310_Chapter_08_Management_Student</artifactId>
+    <groupId>quyha.ut.edu</groupId>
+    <artifactId>QUYHA_Chapter_08_Management_Student</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>HSF310_Chapter_08_Management_Student</name>
+    <name>QUYHA_Chapter_08_Management_Student</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -102,7 +102,7 @@
     </repositories>
 
     <build>
-        <finalName>HSF310_Chapter_08_Management_Student</finalName>
+        <finalName>QUYHA_Chapter_08_Management_Student</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -116,3 +116,4 @@
         </plugins>
     </build>
 </project>
+

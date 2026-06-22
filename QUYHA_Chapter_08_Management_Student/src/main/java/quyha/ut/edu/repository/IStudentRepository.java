@@ -1,8 +1,8 @@
-package hsf301.fe.com.repository;
+package quyha.ut.edu.repository;
 
 import java.util.List;
 
-import hsf301.fe.com.pojo.Student;
+import quyha.ut.edu.pojo.Student;
 
 public interface IStudentRepository {
     
@@ -17,3 +17,4 @@ public interface IStudentRepository {
     public void update(Student student);
 
 }
+

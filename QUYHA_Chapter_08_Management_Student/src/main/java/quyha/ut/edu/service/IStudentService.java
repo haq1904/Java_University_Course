@@ -1,7 +1,7 @@
-package hsf301.fe.com.service;
+package quyha.ut.edu.service;
 
 import java.util.List;
-import hsf301.fe.com.pojo.Student;
+import quyha.ut.edu.pojo.Student;
 
 public interface IStudentService {
     public List<Student> findAll();
@@ -10,3 +10,4 @@ public interface IStudentService {
     public Student findById(int studentID);
     public void update(Student student);
 }
+

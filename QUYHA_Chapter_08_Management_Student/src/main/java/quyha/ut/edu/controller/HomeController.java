@@ -1,4 +1,4 @@
-package hsf301.fe.com.controller;
+package quyha.ut.edu.controller;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import hsf301.fe.com.pojo.Student;
-import hsf301.fe.com.service.IStudentService;
-import hsf301.fe.com.service.StudentService;
+import quyha.ut.edu.pojo.Student;
+import quyha.ut.edu.service.IStudentService;
+import quyha.ut.edu.service.StudentService;
 
 @Controller
 public class HomeController {
@@ -43,3 +43,4 @@ public class HomeController {
         return "redirect:/";
     }
 }
+

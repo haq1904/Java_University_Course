@@ -1,9 +1,9 @@
-package hsf301.fe.com.repository;
+package quyha.ut.edu.repository;
 
 import java.util.List;
 
-import hsf301.fe.com.dao.StudentDAO;
-import hsf301.fe.com.pojo.Student;
+import quyha.ut.edu.dao.StudentDAO;
+import quyha.ut.edu.pojo.Student;
 
 public class StudentRepository implements IStudentRepository {
     private StudentDAO studentDAO = null;
@@ -37,3 +37,4 @@ public class StudentRepository implements IStudentRepository {
         studentDAO.update(student);
     }
 }
+

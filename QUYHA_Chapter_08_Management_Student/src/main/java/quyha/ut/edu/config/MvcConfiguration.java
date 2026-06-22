@@ -1,4 +1,4 @@
-package hsf301.fe.com.config;
+package quyha.ut.edu.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages="hsf301.fe.com")
+@ComponentScan(basePackages="quyha.ut.edu")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter {
 
@@ -27,3 +27,4 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
     }
 }
+

@@ -1,4 +1,4 @@
-package hsf301.fe.com.dao;
+package quyha.ut.edu.dao;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import hsf301.fe.com.pojo.Student;
+import quyha.ut.edu.pojo.Student;
 
 public class StudentDAO {
     
@@ -90,3 +90,4 @@ public class StudentDAO {
         }
     }
 }
+

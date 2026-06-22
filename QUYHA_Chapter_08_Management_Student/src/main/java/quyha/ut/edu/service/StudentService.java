@@ -1,10 +1,10 @@
-package hsf301.fe.com.service;
+package quyha.ut.edu.service;
 
 import java.util.List;
 
-import hsf301.fe.com.pojo.Student;
-import hsf301.fe.com.repository.IStudentRepository;
-import hsf301.fe.com.repository.StudentRepository;
+import quyha.ut.edu.pojo.Student;
+import quyha.ut.edu.repository.IStudentRepository;
+import quyha.ut.edu.repository.StudentRepository;
 
 public class StudentService implements IStudentService {
     private IStudentRepository iStudentRepo = null;
@@ -38,3 +38,4 @@ public class StudentService implements IStudentService {
         iStudentRepo.update(student);
     }
 }
+
